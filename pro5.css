@@ -1,0 +1,25 @@
+planet, ocean{
+    display: block;
+    background-color: white;
+    margin: 2em 1em;
+    padding: 0 1em;
+    border: 4px solid #cdf;
+    background-color: white;
+    }
+    planet::before{
+    content: 'Ocean';
+    display: block;
+    width:8em;
+    margin: -.75em 0 .25em -.25em;
+    padding:.1em .25em;
+    border: 4px solid #cdf;
+    }
+    name,area,depth{
+    display: block;
+    }
+    area::before,depth::before{
+    content:attr(data-label);
+    }
+    area::after,depth::after{
+    content:"million km2";
+    }

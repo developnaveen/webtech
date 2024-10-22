@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mouse and Form Event Handling</title>
+<style>
+.container {
+text-align: center;
+margin-top: 100px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Mouse and Form Event Handling Example</h1>
+<div id="myElement" onmouseover="handleMouseOver()" 
+onmouseout="handleMouseOut()"
+style="padding: 20px; border: 1px solid black;">
+Move the mouse over this element to change its background color.
+</div>
+<br>
+<form onsubmit="handleSubmit(event)">
+<label for="myInput">Enter a value:</label>
+<input type="text" id="myInput" required>
+<button type="submit">Submit</button>
+</form>
+</div>
+<script src="pro10.js"></script>
+</body>
+</html>
